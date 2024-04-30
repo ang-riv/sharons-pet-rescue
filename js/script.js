@@ -22,6 +22,12 @@ const createPet = function (name, species){
             }
         }
     };
-
     return pet;
 }
+
+// making some pets
+const sora = createPet("Sora", "ferret");
+const clover = createPet("Clover", "rabbit");
+const baxter = createPet("Baxter", "hamster");
+const cleo = createPet("Cleo", "rat");
+const francine = createPet("Francine", "turtle");
