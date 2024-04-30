@@ -1,4 +1,4 @@
-//const statusButton = document.querySelector("button");
+const statusButton = document.querySelector("button");
 const pets = document.querySelector(".all-pets");
 
 const createPet = function (name, species){
@@ -64,8 +64,11 @@ const showPets = function(petArray) {
         }
         // create a list element
         let li = document.createElement("li");
-        li.innerHTML = `<span class = "pet-name">${animal.name}</span>, the ${animal.species}, is ${status}`
+        li.innerHTML = `<span class = "pet-name">${animal.name}</span> the ${animal.species} is ${status}`
         pets.append(li);
     }
 };
 
+statusButton.addEventListener("click", function () {
+    showPets(allPets);
+})
